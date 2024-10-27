@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/IMG/mono.jpg" />
+    <title>Ruben's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="icon">
+        <img src="./IMG/mono.jpg" alt="Ruben's Logo" />
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#sectie2">Over mij</a></li>
+        <li><a href="#sectie3">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <header class="hero-container" id="sectie1">
+        <div class="hero-content" data-aos="fade-up">
+          <div>
+            <h1>Ik ben html <span>n00b</span></h1>
+          </div>
+        </div>
+      </header>
+
+      <section
+        data-aos="fade-up"
+        id="sectie2"
+        class="section-container nogeenklasse"
+      >
+        <div
+          class="tekst-wrapper achtergrond-div"
+          style="background-image: url('./IMG/motor.jpeg')"
+        >
+          <div>
+            <h2>Over mij</h2>
+            <p>
+              Welkom op mijn persoonlijke website! Mijn naam is Ruben Janssen,
+              24 jaar jong en vol enthousiasme over alles wat te maken heeft met
+              design en technologie. Momenteel ben ik bezig met de opleiding CMD
+              (Communicatie en Multimedia Design) aan de Hanzehogeschool in
+              Groningen. Hier dompel ik me dagelijks onder in de wereld van
+              digitaal ontwerpen, waar ik mijn creativiteit en liefde voor
+              coderen perfect kan samenbrengen. Of het nu gaat om het bedenken
+              van innovatieve concepten of het ontwikkelen van
+              gebruiksvriendelijke websites en apps, ik ga altijd voor het beste
+              resultaat. Veel plezier met het verkennen van mijn werk!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        data-aos="fade-up"
+        id="sectie3"
+        class="section-container glide-container"
+      >
+        <div class="project-wrapper">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./IMG/png.jpg" alt="poppetje" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./IMG/mono.jpg" alt="monogram" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./IMG//cover_door_bouw.jpg" alt="cover" />
+                </li>
+              </ul>
+            </div>
+
+            <!-- Optional navigation controls -->
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+              >
+                &lt;
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+              >
+                &gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100011237921346"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@laurensjanssen9658">Youtube</a>
+          </li>
+          <li><a href="https://www.instagram.com/rgbjanssen/">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Add Glide.js and AOS script just before the closing body tag -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init();
+
+      // Initialize Glide.js
+      new Glide(".glide", {
+        type: "carousel",
+        startAt: 0,
+        perView: 1, // Adjust number of slides per view
+        gap: 0, // Space between slides
+      }).mount();
+    </script>
+  </body>
+</html>
